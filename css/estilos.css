@@ -103,7 +103,7 @@ h1 {
 
 .parrafoTemporada {
   /*APLICANDO EXTEND EN ELEMENTOS-BIOGRAFIA*/
-  color: white;
+  color: darkgoldenrod;
   margin-top: 8px;
   margin-bottom: 8px; }
 
@@ -122,10 +122,15 @@ h1 {
     margin-right: 30px;
     font-size: 14px; }
   #fotoTemporada {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 300px; } }
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .parrafoTemporada {
+    color: darkgoldenrod;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 16px; } }
 
 /*CSS PARA SOUNDTRACK*/
 .soundtrack {
@@ -142,23 +147,34 @@ h1 {
     height: 350px; }
 
 /*CSS PARA CLUB DE FANS*/
-#club {
+.club {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 50px; }
+  align-items: center;
+  justify-content: space-around; }
 
-#team {
+.espacioFoto {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px; }
+
+.espacioForm {
+  display: flex;
+  justify-content: center; }
+
+.team {
   width: 400px;
-  height: 400px;
-  margin-left: 120px; }
+  height: 400px; }
 
 .formClub {
   width: 500px;
   height: 600px;
-  margin-bottom: 50px;
-  margin-left: 150px;
-  font-size: 20px;
-  text-align: left; }
+  font-size: 18px;
+  text-align: left;
+  margin-top: 10px; }
+
+.consulta {
+  margin-top: 40px; }
 
 @media (max-width: 600px) {
   #team {
@@ -171,8 +187,10 @@ h1 {
     height: 400px;
     margin-bottom: 20px;
     margin-left: 20px;
-    font-size: 14px;
-    text-align: left; } }
+    font-size: 16px;
+    text-align: left; }
+  .espacioForm {
+    height: 550px; } }
 
 /*CSS - METODOLOGIA BEM EN BOTON, DONDE BOTON ES MI BLOQUE Y CON MODIFICADOR DE CAMBIO DE COLOR*/
 .boton {
@@ -245,6 +263,9 @@ h1 {
     margin-right: 30px;
     font-size: 14px; }
   #fotoActor {
-    display: flex;
-    justify-content: center;
-    align-items: center; } }
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .biografia {
+    margin-right: 30px;
+    text-align: center; } }
